@@ -1,5 +1,5 @@
 class Bullet:
-    def __init__(self, sprite, xpos, ypos, range:float, radius, dmg:int):
+    def __init__(self, sprite, xpos, ypos, range: float, radius, dmg: int):
         self.sprite = sprite
         self.xpos = xpos
         self.ypos = ypos
