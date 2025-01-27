@@ -16,7 +16,7 @@ class RangedMonster(Monster):
         self.attack_range = attack_range
 
     def attack(self, target):
-        print(f"RangedMonster greift {target} aus der Entfernung {self.attack_range} an!")
+        print(f"RangedMonster greift {target.sprite} aus der Entfernung {self.attack_range} an!")
 
 
 class MeleeMonster(Monster):
