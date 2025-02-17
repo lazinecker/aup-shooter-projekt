@@ -1,8 +1,8 @@
 class Hitbox:
-    def __init__(self, xpos, ypos, radius):
-        self.xpos = xpos
-        self.ypos = ypos
+    def __init__(self, radius, xPos, yPos):
         self.radius = radius
+        self.xPos = xPos
+        self.yPos = yPos
 
     def collides_with(self):
         pass

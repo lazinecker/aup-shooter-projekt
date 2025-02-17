@@ -1,18 +1,10 @@
 class Item:
-    def __init__(self, sprite, xpos, ypos):
+    def __init__(self, sprite, x_pos, y_pos):
         self.sprite = sprite
-        self.xpos = xpos
-        self.ypos = ypos
+        self.x_pos = x_pos
+        self.y_pos = y_pos
 
-    def on_collect(self):
+        self.hitbox = None
+
+    def apply_effect(self, player):
         pass
-
-
-class MedKit(Item):
-    def __init__(self, sprite, xpos, ypos, heal_amount):
-        super().__init__(sprite, xpos, ypos)
-        self.heal_amount = heal_amount
-
-    def on_collect(self, target):
-        print(f"{target.sprite} hat {self.heal_amount} Gesundheit erhalten!")
-        target.hp = min(target.maxhp, target.hp + self.heal_amount)

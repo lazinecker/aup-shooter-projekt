@@ -1,11 +1,11 @@
 class Bullet:
-    def __init__(self, sprite, xpos, ypos, range: float, radius, dmg: int):
+    def __init__(self, sprite, x_pos, y_pos, bullet_range):
         self.sprite = sprite
-        self.xpos = xpos
-        self.ypos = ypos
-        self.range = range
-        self.radius = radius
-        self.dmg = dmg
+        self.x = x_pos
+        self.y = y_pos
+        self.range = bullet_range
+
+        self.hitbox = None
 
     def move(self):
         pass
